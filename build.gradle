@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+//1. maven push
+apply from: '../maven-push.gradle'
+android {
+    //2. push release
+    publishing {
+        singleVariant('release')
+    }
+//    resourcePrefix "bluetoothkit_"
+
+    compileSdkVersion 32
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//3.1. config version
+def libVersion='1.0.0-SNAPSHOT'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                //3.2. config gid
+                groupId = 'io.github.bullair'
+                artifactId = ''
+                version = libVersion
+
+                artifact androidSourcesJar
+                pom {
+                    //3.3. config name, desc, github_url
+                    name = 'blkit'
+                    description = 'blkit library'
+                    url = 'https://github.com/bullair/blkit'
+                    packaging = 'aar'
+                    licenses {
+                        license {
+                            name = 'Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0'
+                            distribution = 'repo'
+                        }
+                    }
+                    //3.4 config author
+                    developers {
+                        developer {
+                            id = 'bullair'
+                            name = 'bullair'
+                        }
+                    }
+                    //3.2. config push site
+                    scm {
+                        connection = 'scm:hg:https://github.com/bullair/blkit'
+                        developerConnection = 'scm:hg:https://github.com/bullair/blkit'
+                        url = 'https://github.com/bullair/blkit'
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.alibaba:arouter-api:1.5.2'
+    kapt 'com.alibaba:arouter-compiler:1.5.2'
+    api 'com.alibaba:arouter-annotation:1.0.6'
+
+    implementation 'com.github.SaltedFish-Extreme:PermissionX:1.0.0'
+    api  'com.blankj:utilcodex:1.30.6'
+    api 'com.github.li-xiaojun:XPopup:2.8.11'
+    api 'com.github.li-xiaojun:XPopupExt:0.0.7'
+    api 'androidx.appcompat:appcompat:1.4.1'
+    api 'com.google.android.material:material:1.4.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.1'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+
+    api 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    api 'com.jeremyliao:live-event-bus-x:1.7.3'
+    api 'com.github.bumptech.glide:glide:4.14.2'
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
+}

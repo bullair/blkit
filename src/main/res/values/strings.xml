@@ -1,0 +1,74 @@
+<resources>
+    <string name="connecting" translatable="false">Connecting&amp;# 8230</string>
+
+
+
+    <string name="str_bl_connect" translatable="false">Connect</string>
+
+    <string name="str_bl_flushed" translatable="false">Refresh</string>
+
+    <string name="str_bl_not_connected" translatable="false">Not connected</string>
+
+    <string name="str_bl_connected" translatable="false">Connected</string>
+
+    <string name="str_bl_loading" translatable="false">Loading</string>
+
+    <string name="str_bl_space_untie" translatable="false">| Unbind</string>
+
+
+
+    <string name="str_bl_my_device">My device</string>
+
+    <string name="str_bl_the_connection_was_successful">Connection succeeded</string>
+
+    <string name="str_bl_the_connection_was_fail">Connection failed</string>
+
+    <string name="str_bl_search_for_a_device">Search device</string>
+
+    <string name="str_bl_device_management">Device management</string>
+
+    <string name="str_bl_search_again">Search again</string>
+
+    <string name="str_bl_signal_strength">Signal strength</string>
+
+    <string name="str_bl_other_equipment">Other equipment</string>
+
+    <string name="str_bl_device_id">Device ID</string>
+
+
+
+    <string name="str_bl_the_device_isnot_found">No device found</string>
+
+    <string name="str_bl_the_device_im_bound_to">My bound device</string>
+
+    <string name="str_bl_the_device_that_was_discovered">Devices searched</string>
+
+
+
+    <string name="str_bl_add_my_device">Add my device</string>
+
+    <string name="str_bl_current_count_">Current count: --</string>
+
+    <string name="str_bl_stepbystep_instructions_for_connecting_devices">Instructions for connecting devices</string>
+
+    <string name="str_bl_press_and_hold_the_device_count_key_to_discover_connected_bluetooth">Press and hold the device count key to search/connect Bluetooth</string>
+
+
+
+    <string name="str_bl_you_are_sure_to_unbind_the_device">Are you sure to unbind the device:%s</string>
+
+    <string name="str_bl_you_have_success_unbound_the_device">You have successfully unbound the device</string>
+
+    <string name="str_bl_you_arenot_currently_bound_to_a_device">You have not bound the device yet</string>
+
+    <string name="str_bl_your_phone_s_bluetooth_isnot_turned_on_you_cant_find_or_connect_devices_please_turn_it_on_manually">Your mobile phone Bluetooth is not turned on and cannot search for or connect devices. Please turn it on manually</string>
+
+    <string name="str_bl_please_allow_the_relevant_permission_locate_and_bluetooth_to_operate">Please allow the relevant permissions to operate after [positioning and Bluetooth]</string>
+
+    <string name="str_bl_your_phone_s_bluetooth_isnot_turned_on_you_cant_connect_to_the_device_please_turn_it_on_manually">Your mobile phone Bluetooth is not turned on and cannot connect to the device. Please turn it on manually</string>
+
+    <string name="str_bl_click_the_add_my_device_button_above_press_and_hold_the_device_count_key_and_wait_for_the_phone_to_search_for_the_device">1. Click the "Add my device" button above, long press the device count key, and wait for the mobile phone to search for the device</string>
+
+    <string name="str_bl_find_your_device_and_click_the_connect_button_to_connect_it">2. Find your device and click the "Connect" button to connect the device</string>
+
+</resources>

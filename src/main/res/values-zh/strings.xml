@@ -1,0 +1,38 @@
+<resources>
+    <string name="connecting" translatable="false">连接中&#8230;</string>
+
+    <string name="str_bl_connect" translatable="false">连接</string>
+    <string name="str_bl_flushed" translatable="false">刷新</string>
+    <string name="str_bl_not_connected" translatable="false">未连接</string>
+    <string name="str_bl_connected" translatable="false">已连接</string>
+    <string name="str_bl_loading" translatable="false">加载中</string>
+    <string name="str_bl_space_untie" translatable="false"> ｜ 解绑</string>
+
+    <string name="str_bl_my_device">我的设备</string>
+    <string name="str_bl_the_connection_was_successful">连接成功</string>
+    <string name="str_bl_the_connection_was_fail">连接失败</string>
+    <string name="str_bl_search_for_a_device">搜索设备</string>
+    <string name="str_bl_device_management">设备管理</string>
+    <string name="str_bl_search_again">重新搜索</string>
+    <string name="str_bl_signal_strength">信号强度</string>
+    <string name="str_bl_other_equipment">其它设备</string>
+    <string name="str_bl_device_id">设备ID</string>
+
+    <string name="str_bl_the_device_isnot_found">未搜索到设备</string>
+    <string name="str_bl_the_device_im_bound_to">我绑定的设备</string>
+    <string name="str_bl_the_device_that_was_discovered">搜索到的设备</string>
+
+    <string name="str_bl_add_my_device">添加我的设备</string>
+    <string name="str_bl_current_count_">当前计数：--</string>
+    <string name="str_bl_stepbystep_instructions_for_connecting_devices">连接设备步骤说明</string>
+    <string name="str_bl_press_and_hold_the_device_count_key_to_discover_connected_bluetooth">长按设备计数键搜寻/连接蓝牙</string>
+
+    <string name="str_bl_you_are_sure_to_unbind_the_device">您确定解绑设备：%s吗？</string>
+    <string name="str_bl_you_have_success_unbound_the_device">您已成功解绑设备</string>
+    <string name="str_bl_you_arenot_currently_bound_to_a_device">您当前还未绑定设备哦</string>
+    <string name="str_bl_your_phone_s_bluetooth_isnot_turned_on_you_cant_find_or_connect_devices_please_turn_it_on_manually">您的手机蓝牙未开启，无法搜寻或连接设备，请手动打开</string>
+    <string name="str_bl_please_allow_the_relevant_permission_locate_and_bluetooth_to_operate">请您允许有关权限【定位与蓝牙】后操作</string>
+    <string name="str_bl_your_phone_s_bluetooth_isnot_turned_on_you_cant_connect_to_the_device_please_turn_it_on_manually">您的手机蓝牙未开启，无法连接设备，请手动打开</string>
+    <string name="str_bl_click_the_add_my_device_button_above_press_and_hold_the_device_count_key_and_wait_for_the_phone_to_search_for_the_device">1、点击上方“添加我的设备”按钮，长按设备计数键，等待手机搜索设备</string>
+    <string name="str_bl_find_your_device_and_click_the_connect_button_to_connect_it">2、找到自己的设备，点击“连接”按钮，连接设备</string>
+</resources>
